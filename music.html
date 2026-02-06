@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love you, Jerome!</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;   /* centers horizontally */
+      align-items: center;       /* centers vertically */
+      height: 100vh;             /* full viewport height */
+      background: #000;
+      overflow: hidden;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 40px; /* space between lyrics and video */
+    }
+
+    .lyrics {
+      color: white;
+      font-size: 20px;
+      max-width: 300px;
+      text-align: left; /* aligns text to the left */
+    }
+
+    #bg-video {
+      max-height: 90vh;  /* keeps video inside screen */
+      height: auto;
+      width: auto;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lyrics">
+      <p>they don't know about us</p>
+      <p>they don't know how special you are</p>
+      <p>they don't know what you've done to my heart</p>
+      <p>they can say anything they want</p>
+      <p>cause they don't know about us</p>
+
+      
+    </div>
+
+    <video autoplay loop id="bg-video">
+      <source src="love/j.mp4" type="video/mp4">
+    </video>
+  </div>
+</body>
+</html>
