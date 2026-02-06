@@ -1,31 +1,43 @@
-
 body {
-    background-image: url('bg.jpg');
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
+
 #div1 {
-    text-align: center;
-    background-color: lightpink;
-    width: 50%;              
-    margin: 50px auto;       
-    padding: 20px;           
-    border-radius: 10px;  
-    margin-top: 5%;   
-    color:whitesmoke;
-    line-height: 1.6;
-    font-size: 18px;
-    text-shadow: 2px 2px 5px crimson;
+  text-align: center;
+  background-color: lightpink;
+  max-width: 600px;   /* limits size on desktop */
+  width: 90%;         /* fills most of mobile screen */
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: whitesmoke;
+  line-height: 1.6;
+  font-size: 1.1em;   /* scales with screen */
+  text-shadow: 2px 2px 5px crimson;
 }
-#div1 {
-    display: flex;
-    justify-content: center; /* centers images horizontally */
-    flex-wrap: wrap;         /* allows wrapping on small screens */
-    gap: 15px;               /* space between images */
+
+.images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.images img {
+  max-width: 45%;   /* responsive scaling */
+  height: auto;
+  border-radius: 8px;
 }
 
 #nextBtn {
   margin-top: 20px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   border-radius: 8px;
   border: 2px solid crimson;
@@ -33,13 +45,9 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+
 #nextBtn:hover {
   background-color: crimson;
   color: white;
   transform: scale(1.1);
-}
-
-button {
-  width: 120px;
-  height: 40px;
 }
