@@ -10,7 +10,8 @@
       height: 100vh;                 /* full screen height */
       background: #000;
       display: flex;
-      justify-content: center;
+      flex-direction: column;        /* stack main container + pictures */
+      justify-content: space-between;/* push pictures to bottom */
       align-items: center;
     }
 
@@ -19,7 +20,7 @@
       grid-template-columns: 1fr 1fr; /* two equal columns */
       width: 100%;
       max-width: 1000px;
-      height: 90vh;                  /* both columns same height */
+      height: 70vh;                  /* both columns same height */
     }
 
     .lyrics {
@@ -38,6 +39,27 @@
       object-fit: cover;             /* keeps aspect ratio, fills space */
       border-radius: 8px;
     }
+
+    .picture {
+      display: flex;
+      justify-content: center;
+      gap: 15px;                     /* space between images */
+      margin-bottom: 10px;
+    }
+
+    .picture img {
+      width: 120px;                  /* consistent size */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(255,255,255,0.3);
+    }
+
+    .caption {
+      color: white;
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
@@ -54,12 +76,17 @@
       <source src="j.mp4" type="video/mp4">
     </video>
   </div>
+
+  <!-- Images at the bottom -->
   <div class="picture">
-    <img src="3.jpg">
-    <img src="5.jpg">
-    <img src="8.jpg">
+    <img src="3.jpg" alt="photo1">
+    <img src="5.jpg" alt="photo2">
+    <img src="8.jpg" alt="photo3">
+  </div>
+
+  <!-- Caption below the images -->
+  <div class="caption">
+    all time favorite kainan ❤️
   </div>
 </body>
 </html>
-
-
