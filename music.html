@@ -13,53 +13,58 @@
       flex-direction: column;        /* stack main container + pictures */
       justify-content: space-between;/* push pictures to bottom */
       align-items: center;
+      font-family: Arial, sans-serif;
     }
 
     .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* always two columns */
-  width: 100%;
-  max-width: 900px;              /* keeps it neat on big screens */
-  height: auto;                  /* let content decide height */
-  align-items: center;           /* vertically align text + video */
-}
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* always two columns */
+      width: 100%;
+      max-width: 900px;              /* keeps it neat on big screens */
+      height: auto;                  /* let content decide height */
+      align-items: center;           /* vertically align text + video */
+      gap: 20px;
+      padding: 20px;
+    }
 
-.lyrics {
-  color: white;
-  font-size: 1.1em;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;       /* center text vertically */
-}
+    .lyrics {
+      color: white;
+      font-size: 1.1em;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;       /* center text vertically */
+    }
 
-#bg-video {
-  width: 100%;
-  height: auto;                  /* scale naturally */
-  max-height: 500px;             /* limit video height */
-  object-fit: cover;
-  border-radius: 8px;
-}
+    #bg-video {
+      width: 100%;
+      height: auto;                  /* scale naturally */
+      max-height: 500px;             /* limit video height */
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
 
-.picture {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
+    .picture {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
 
-.picture img {
-  width: 120px;
-  height: auto;
-  border-radius: 8px;
-}
+    .picture img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
 
-.caption {
-  color: white;
-  font-size: 1.2em;
-  text-align: center;
-  margin-top: 10px;
-}
+    .caption {
+      color: white;
+      font-size: 1.2em;
+      text-align: center;
+      margin: 15px 0;
+    }
   </style>
 </head>
 <body>
@@ -72,8 +77,10 @@
       <p>cause they don't know about us</p>
     </div>
 
-    <video autoplay muted control loop id="bg-video">
+    <!-- Fixed video controls -->
+    <video autoplay muted controls loop id="bg-video">
       <source src="j.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
   </div>
 
@@ -90,6 +97,3 @@
   </div>
 </body>
 </html>
-
-
-
