@@ -61,6 +61,24 @@
     .list-item input::placeholder {
       color: black;
     }
+
+    .next-btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      background: hotpink;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(255,105,180,0.6);
+      transition: transform 0.2s ease;
+    }
+
+    .next-btn:hover {
+      transform: scale(1.05);
+      background: deeppink;
+    }
   </style>
 </head>
 <body>
@@ -78,6 +96,11 @@
       <div class="list-item"><span>9</span><input type="text" placeholder="SWEET/SOBRANG LOVE KITA PAG SWEET KA"></div>
       <div class="list-item"><span>10</span><input type="text" placeholder="LOVE KO LAHAT NG MERON KA"></div>
     </div>
+
+    <!-- Next button -->
+    <button class="next-btn" onclick="window.location.href='letter.html'">
+      Next ➡️
+    </button>
   </div>
 </body>
 </html>
