@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentines, Mahal!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: lightpink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      color: hotpink;
+      margin-bottom: 20px;
+    }
+
+    .list {
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      margin: 12px 0;
+      font-size: 1.1em;
+    }
+
+    .list-item span {
+      color: red;
+      font-size: 1.5em;
+      margin-right: 10px;
+    }
+
+    .list-item input {
+      flex: 1;
+      border: none;
+      border-bottom: 2px solid hotpink;
+      font-size: 1em;
+      padding: 5px;
+      outline: none;
+      background: transparent;
+    }
+
+    .list-item input::placeholder {
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>💖 10 Things I Love About You 💖</h1>
+    <div class="list">
+      <div class="list-item"><span>1</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>2</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>3</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>4</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>5</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>6</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>7</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>8</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>9</span><input type="text" placeholder="Write here..."></div>
+      <div class="list-item"><span>10</span><input type="text" placeholder="Write here..."></div>
+    </div>
+  </div>
+</body>
+</html>
